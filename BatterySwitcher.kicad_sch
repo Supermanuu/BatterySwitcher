@@ -5,200 +5,6 @@
 	(uuid "fff52d9c-2593-4d64-8717-f098392b56b0")
 	(paper "A4")
 	(lib_symbols
-		(symbol "1N4154TAP:1N4154TAP"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 11.43 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "1N4154TAP"
-				(at 11.43 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "DIOAD950W60L350D150"
-				(at 11.43 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://labcenter.componentsearchengine.com/Datasheets/1/1N4154TAP.pdf"
-				(at 11.43 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Vishay 1N4154TAP Switching Diode, 300mA 25V, 2-Pin DO-35"
-				(at 11.43 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 11.43 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "78-1N4154-TAP"
-				(at 11.43 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/1N4154TAP?qs=lt3svsyjrnJf4oFTtEPAsA%3D%3D"
-				(at 11.43 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Vishay"
-				(at 11.43 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "1N4154TAP"
-				(at 11.43 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "1N4154TAP_0_0"
-				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "1N4154TAP_0_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 12.7 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 10.16 2.54) (xy 10.16 -2.54) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Conn_01x01_Pin"
 			(pin_names
 				(offset 1.016) hide)
@@ -487,28 +293,450 @@
 				)
 			)
 		)
-	)
-	(junction
-		(at 124.46 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d46b49cb-31c2-4267-aeaf-6d2cbc4bb470")
+		(symbol "SamacSys_Parts:53047-0210"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "53047-0210"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "530470210"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://componentsearchengine.com/Datasheets/2/53047-0210.pdf"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Headers & Wire Housings VERTICAL HDR 2P"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "4.4"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Molex"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "53047-0210"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "538-53047-0210"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/53047-0210?qs=M5Ic86%252BuP8b8FQrTwriyOw%3D%3D"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 16.51 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 16.51 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "53047-0210_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys_Parts:CUHS20S30,H3F"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 12.7 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "CUHS20S30,H3F"
+				(at 12.7 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "CUHS20S40H3F"
+				(at 12.7 -93.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=63606&prodName=CUHS20S30"
+				(at 12.7 -193.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky Diodes & Rectifiers Sml-Signal Schottky 2A 30V 390pF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" ""
+				(at 12.7 -393.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Toshiba"
+				(at 12.7 -493.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "CUHS20S30,H3F"
+				(at 12.7 -593.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "757-CUHS20S30H3F"
+				(at 12.7 -693.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Toshiba/CUHS20S30H3F?qs=PqoDHHvF64%252BnIC9Qnnw9zg%3D%3D"
+				(at 12.7 -793.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 12.7 -893.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 12.7 -993.65 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "CUHS20S30,H3F_1_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.604 -1.524) (xy 6.604 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 6.604 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 8.636 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.636 1.524) (xy 8.636 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 0) (xy 15.24 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 12.7 2.54) (xy 12.7 -2.54) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 100.33 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ff3e299f-bb2b-44d5-819d-bb5c5e0fc6f3")
+		(uuid "82b887f8-04e9-41fd-9e66-beff02a8398b")
 	)
 	(wire
 		(pts
-			(xy 100.33 57.15) (xy 109.22 57.15)
+			(xy 100.33 57.15) (xy 105.41 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "100b42eb-197d-4a7b-96a3-f6287803a858")
+		(uuid "009e5e4b-d2ab-4e69-886c-134ffa216abc")
 	)
 	(wire
 		(pts
@@ -522,7 +750,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 57.15) (xy 123.19 57.15)
+			(xy 124.46 57.15) (xy 120.65 57.15)
 		)
 		(stroke
 			(width 0)
@@ -562,23 +790,23 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 107.95) (xy 77.47 107.95)
+			(xy 64.77 124.46) (xy 64.77 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5d846452-48db-450a-b6ae-174a2a7b66d0")
+		(uuid "4d35766b-417f-439f-ad17-626361e4f4cd")
 	)
 	(wire
 		(pts
-			(xy 59.69 124.46) (xy 76.2 124.46)
+			(xy 64.77 107.95) (xy 64.77 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "60c4a948-42c9-46c9-aaf8-dc516314acea")
+		(uuid "5fdf4d7e-3b61-4941-9dc1-058344a11122")
 	)
 	(wire
 		(pts
@@ -592,7 +820,7 @@
 	)
 	(polyline
 		(pts
-			(xy 113.03 48.26) (xy 113.03 49.53)
+			(xy 113.03 48.26) (xy 113.03 48.26)
 		)
 		(stroke
 			(width 0)
@@ -632,6 +860,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 124.46) (xy 76.2 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8b0049b-5ab0-423a-930f-98b0cb59e08b")
+	)
+	(wire
+		(pts
 			(xy 128.27 67.31) (xy 128.27 57.15)
 		)
 		(stroke
@@ -642,13 +880,23 @@
 	)
 	(polyline
 		(pts
-			(xy 113.03 43.18) (xy 113.03 49.53)
+			(xy 113.03 43.18) (xy 113.03 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ec58d7b9-db8a-414f-a8a1-551ee33b4fa0")
+	)
+	(wire
+		(pts
+			(xy 64.77 107.95) (xy 77.47 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "effbe581-ee6d-4b3d-816f-bfdcdbd1a06c")
 	)
 	(wire
 		(pts
@@ -670,7 +918,7 @@
 		)
 		(uuid "fe011643-5df4-4e82-a823-064c34cebd99")
 	)
-	(text_box "We want to charge the battery in off state meanwhile using the keyboard from the USB port"
+	(text_box "We want to charge the battery in off state, indepentdently of the switch position"
 		(exclude_from_sim no)
 		(at 102.87 34.29 0)
 		(size 38.1 8.89)
@@ -866,33 +1114,53 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 54.61 107.95 0)
+		(lib_id "SamacSys_Parts:53047-0210")
+		(at 64.77 118.11 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "21b69aba-771a-404d-a35c-d03cbc2fdf9c")
+		(uuid "055df60d-6ea5-4645-9ef1-a20e3e2454e2")
 		(property "Reference" "J1"
-			(at 55.245 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Battery -"
-			(at 55.245 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
 			(at 54.61 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Battery"
+			(at 54.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:530470210"
+			(at 48.26 23.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Molex/53047-0210?qs=M5Ic86%252BuP8b8FQrTwriyOw%3D%3D"
+			(at 48.26 -76.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Headers & Wire Housings VERTICAL HDR 2P"
+			(at 64.77 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -900,26 +1168,81 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 54.61 107.95 0)
+		(property "Height" "4.4"
+			(at 48.26 -276.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 54.61 107.95 0)
+		(property "Manufacturer_Name" "Molex"
+			(at 48.26 -376.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "53047-0210"
+			(at 48.26 -476.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "538-53047-0210"
+			(at 48.26 -576.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/53047-0210?qs=M5Ic86%252BuP8b8FQrTwriyOw%3D%3D"
+			(at 48.26 -676.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 48.26 -776.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 48.26 -876.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "fa193b67-e486-4d38-a938-b9a5e3d31922")
+			(uuid "9e225186-e517-45c2-a86d-eecde269021a")
+		)
+		(pin "2"
+			(uuid "6659acf3-ab32-4c01-a895-66312fb32047")
 		)
 		(instances
 			(project "BatterySwitcher"
@@ -931,181 +1254,135 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 54.61 124.46 0)
+		(lib_id "SamacSys_Parts:CUHS20S30,H3F")
+		(at 102.87 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4ce7bc87-f24d-4a63-940a-bca8430ffd38")
-		(property "Reference" "J2"
-			(at 55.245 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Battery +"
-			(at 55.245 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
-			(at 54.61 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 54.61 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "746eefe8-ca8a-4969-a74a-0e51fa5147c5")
-		)
-		(instances
-			(project "BatterySwitcher"
-				(path "/fff52d9c-2593-4d64-8717-f098392b56b0"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "1N4154TAP:1N4154TAP")
-		(at 109.22 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba6a7269-b042-4110-931c-04012c5ed8de")
+		(uuid "911cf85d-fd42-4bcb-bf64-cf2b0311805b")
 		(property "Reference" "D1"
-			(at 116.84 49.53 0)
+			(at 113.03 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1N4154TAP"
-			(at 116.84 52.07 0)
+		(property "Value" "CUHS20S30,H3F"
+			(at 113.03 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "DIOAD950W60L350D150"
-			(at 120.65 57.15 0)
+		(property "Footprint" "SamacSys_Parts:CUHS20S40H3F"
+			(at 115.57 150.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://labcenter.componentsearchengine.com/Datasheets/1/1N4154TAP.pdf"
-			(at 120.65 59.69 0)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Toshiba/CUHS20S30H3F?qs=PqoDHHvF64%252BnIC9Qnnw9zg%3D%3D"
+			(at 115.57 250.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "Vishay 1N4154TAP Switching Diode, 300mA 25V, 2-Pin DO-35"
-			(at 120.65 62.23 0)
+		(property "Description" "Schottky Diodes & Rectifiers Sml-Signal Schottky 2A 30V 390pF"
+			(at 102.87 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Height" ""
-			(at 120.65 64.77 0)
+			(at 115.57 450.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "78-1N4154-TAP"
-			(at 120.65 67.31 0)
+		(property "Manufacturer_Name" "Toshiba"
+			(at 115.57 550.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/1N4154TAP?qs=lt3svsyjrnJf4oFTtEPAsA%3D%3D"
-			(at 120.65 69.85 0)
+		(property "Manufacturer_Part_Number" "CUHS20S30,H3F"
+			(at 115.57 650.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Vishay"
-			(at 120.65 72.39 0)
+		(property "Mouser Part Number" "757-CUHS20S30H3F"
+			(at 115.57 750.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "1N4154TAP"
-			(at 120.65 74.93 0)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Toshiba/CUHS20S30H3F?qs=PqoDHHvF64%252BnIC9Qnnw9zg%3D%3D"
+			(at 115.57 850.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "2a658666-b103-43d1-a7db-5dd968a54bbb")
+		(property "Arrow Part Number" ""
+			(at 115.57 950.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 115.57 1050.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "b2c6f2a5-6446-4a4f-9c39-37690d12b63c")
+			(uuid "9d27b391-2e68-493d-843e-0cf267383443")
+		)
+		(pin "1"
+			(uuid "1899d77c-435b-4ec5-a946-5b17e563187a")
 		)
 		(instances
 			(project "BatterySwitcher"
@@ -1126,7 +1403,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d475ade1-f7d7-4432-babc-442cbcd35536")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 149.225 104.14 0)
 			(effects
 				(font
@@ -1175,7 +1452,7 @@
 		(instances
 			(project "BatterySwitcher"
 				(path "/fff52d9c-2593-4d64-8717-f098392b56b0"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -1219,7 +1496,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.cuidevices.com/product/resource/slw-1276864-4a-d.pdf"
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/CUI-Devices/SLW-1276864-4A-D?qs=1Kr7Jg1SGW90vOt02EYiag%3D%3D"
 			(at 149.86 259.69 0)
 			(effects
 				(font
@@ -1316,7 +1593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eca45054-4b02-4c53-b919-b5516f28d806")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 151.765 116.84 0)
 			(effects
 				(font
@@ -1365,7 +1642,7 @@
 		(instances
 			(project "BatterySwitcher"
 				(path "/fff52d9c-2593-4d64-8717-f098392b56b0"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)

@@ -9,7 +9,7 @@
 |  J1       | 1   | Battery          | https://www.mouser.es/ProductDetail/Molex/53047-0210?qs=M5Ic86%252BuP8b8FQrTwriyOw%3D%3D         | SamacSys_Parts:530470210    |
 |  J2       | 1   | Power +          | ~                                                             | Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical     |
 |  J3       | 1   | Power -          | ~                                                             | Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical     |
-|  S1       | 1   | SLW-1276864-4A-D | https://www.mouser.es/ProductDetail/CUI-Devices/SLW-1276864-4A-D?qs=1Kr7Jg1SGW90vOt02EYiag%3D%3D | SLW12768644AD               |
+|  S1       | 1   | SLW-883935-2A-D  | https://www.mouser.es/ProductDetail/179-SLW-883935-2A-D                                          | SLW8839352AD                |
 
 ## Not from PCB
 

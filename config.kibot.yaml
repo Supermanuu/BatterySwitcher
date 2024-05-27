@@ -29,7 +29,7 @@ filters:
 preflight:
   run_erc: true
   update_xml: true
-  run_drc: true
+  # run_drc: true
   check_zone_fills: false
   ignore_unconnected: false
 

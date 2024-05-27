@@ -130,7 +130,7 @@
 		(descr "53047-0210-3")
 		(tags "Connector")
 		(property "Reference" "J1"
-			(at -3.6875 2.25 360)
+			(at -3.6875 2.25 0)
 			(layer "F.SilkS")
 			(uuid "1738c54e-90b6-478c-a2f2-503cd64e1afe")
 			(effects
@@ -142,7 +142,7 @@
 			)
 		)
 		(property "Value" "Battery"
-			(at -0.087 0.45 360)
+			(at -0.087 0.45 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "88b6b66c-42ac-484a-aa54-a93b0e279a9e")
@@ -447,7 +447,7 @@
 			(uuid "73b1067a-aa58-4007-8e7a-f427fc97df62")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.087 0.45 360)
+			(at -0.087 0.45 0)
 			(layer "F.Fab")
 			(uuid "4a1089a2-2d88-4e8f-81be-41d4756e5975")
 			(effects
@@ -1505,7 +1505,7 @@
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J3"
-			(at -2 0.5 180)
+			(at -1.5 -1 180)
 			(layer "B.SilkS")
 			(uuid "84f7cd79-229a-44c0-8058-c36abe04f7e5")
 			(effects

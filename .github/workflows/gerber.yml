@@ -46,7 +46,7 @@ jobs:
       - name: Upload BOM
         uses: actions/upload-artifact@v4.3.3
         with:
-          name BOM
+          name: BOM
           if-no-files-found: error
           path: "**.html" 
 

@@ -54,7 +54,7 @@ jobs:
         with:
           name: BOM
           if-no-files-found: error
-          path: "**.html" 
+          path: "Interactive BoM" 
 
       - name: Upload pdf schematic
         uses: actions/upload-artifact@v4.3.3

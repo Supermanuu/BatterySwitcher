@@ -29,9 +29,6 @@ jobs:
       - name: KiBot GitHub action
         uses: INTI-CMNB/KiBot@v1.7.0
 
-      - uses: satackey/action-docker-layer-caching@v0.0.11
-        continue-on-error: true
-
       - name: Run another script
         run: ls -rl
             

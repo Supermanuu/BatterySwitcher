@@ -28,11 +28,17 @@ jobs:
       # Generate gerber files
       - name: KiBot GitHub action
         uses: INTI-CMNB/KiBot@v1.7.0
+
+      - uses: satackey/action-docker-layer-caching@v0.0.11
+        continue-on-error: true
+
+      - name: Run another script
+        run: ls -rl
             
       - name: Upload manufacturing files
         uses: actions/upload-artifact@v4.3.3
         with:
-          name: manufacturing.zip
+          name: manufacturing
           if-no-files-found: error
           path: "**.zip" 
 
@@ -41,7 +47,7 @@ jobs:
         with:
           name: images
           if-no-files-found: error
-          path: "**.png" 
+          path: "**.png"
 
       - name: Upload BOM
         uses: actions/upload-artifact@v4.3.3

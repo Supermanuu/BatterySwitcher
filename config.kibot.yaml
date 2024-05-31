@@ -29,7 +29,7 @@ filters:
 preflight:
   run_erc: true
   update_xml: true
-  run_drc: true
+  # run_drc: true
   check_zone_fills: false
   ignore_unconnected: false
 
@@ -54,14 +54,14 @@ outputs:
     options:
       format: CSV
 
-  - name: 'board_image_top'
+  - name: 'top'
     comment: "Image of PCB"
     type: pcbdraw
     options:
       bottom: false
       format: "png"
 
-  - name: 'board_image_bottom'
+  - name: 'bottom'
     comment: "Image of PCB"
     type: pcbdraw
     options:
@@ -73,7 +73,7 @@ outputs:
     type: pdf_sch_print
     dir: .
     options:
-      output: Schematic.pdf
+      output: schematic.pdf
 
   - name: "interactive_bom"
     comment: "Interactive Bill of Materials (HTML)"

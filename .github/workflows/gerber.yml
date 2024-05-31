@@ -28,17 +28,35 @@ jobs:
       # Generate gerber files
       - name: KiBot GitHub action
         uses: INTI-CMNB/KiBot@v1.7.0
-            
-      - name: Upload Gerbers
-        uses: actions/upload-artifact@v4.3.3
-        with:
-          # Artifact name
-          name: gerbers
-          path: "**.gbr" 
 
-      - name: Upload Drills
+      - name: Run another script
+        run: ls -rl
+            
+      - name: Upload manufacturing files
         uses: actions/upload-artifact@v4.3.3
         with:
-          # Artifact name
-          name: gerbers
-          path: "**.drl" 
+          name: manufacturing
+          if-no-files-found: error
+          path: "**.zip" 
+
+      - name: Upload images
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: images
+          if-no-files-found: error
+          path: "**.png"
+
+      - name: Upload BOM
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: BOM
+          if-no-files-found: error
+          path: "Interactive BoM" 
+
+      - name: Upload pdf schematic
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: schematic
+          if-no-files-found: error
+          path: "**.pdf" 
+

@@ -30,4 +30,4 @@ jobs:
         with:
           name: release.zip
           if-no-files-found: error
-          path: "releaase/*"
+          path: "release/*"

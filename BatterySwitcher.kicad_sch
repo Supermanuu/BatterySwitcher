@@ -124,7 +124,7 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:53047-0210"
+		(symbol "Samacsys:53047-0210"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -146,7 +146,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "530470210"
+			(property "Footprint" "Samacsys:530470210"
 				(at 16.51 -94.92 0)
 				(effects
 					(font
@@ -295,13 +295,13 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:CUHS20S30,H3F"
+		(symbol "Samacsys:MBR0520LT1G"
 			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at 12.7 8.89 0)
+				(at 11.43 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -309,8 +309,8 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "CUHS20S30,H3F"
-				(at 12.7 6.35 0)
+			(property "Value" "MBR0520LT1G"
+				(at 11.43 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -318,18 +318,8 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "CUHS20S40H3F"
-				(at 12.7 -93.65 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=63606&prodName=CUHS20S30"
-				(at 12.7 -193.65 0)
+			(property "Footprint" "Samacsys:SOD3716X135N"
+				(at 11.43 -97.46 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -338,7 +328,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Schottky Diodes & Rectifiers Sml-Signal Schottky 2A 30V 390pF"
+			(property "Datasheet" "http://www.onsemi.com/pub/Collateral/MBR0520LT1-D.PDF"
+				(at 11.43 -197.46 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "MBR0520LT1G, Schottky Diode,  0.5A max, 20V, 2-Pin, SOD-123"
 				(at 0 0 0)
 				(effects
 					(font
@@ -347,8 +347,8 @@
 					(hide yes)
 				)
 			)
-			(property "Height" ""
-				(at 12.7 -393.65 0)
+			(property "Height" "1.35"
+				(at 11.43 -397.46 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -357,8 +357,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "Toshiba"
-				(at 12.7 -493.65 0)
+			(property "Manufacturer_Name" "onsemi"
+				(at 11.43 -497.46 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -367,8 +367,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "CUHS20S30,H3F"
-				(at 12.7 -593.65 0)
+			(property "Manufacturer_Part_Number" "MBR0520LT1G"
+				(at 11.43 -597.46 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -377,8 +377,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "757-CUHS20S30H3F"
-				(at 12.7 -693.65 0)
+			(property "Mouser Part Number" "863-MBR0520LT1G"
+				(at 11.43 -697.46 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -387,8 +387,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Toshiba/CUHS20S30H3F?qs=PqoDHHvF64%252BnIC9Qnnw9zg%3D%3D"
-				(at 12.7 -793.65 0)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/MBR0520LT1G?qs=3JMERSakebqBWTiPUQp0nw%3D%3D"
+				(at 11.43 -797.46 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -397,8 +397,8 @@
 					(hide yes)
 				)
 			)
-			(property "Arrow Part Number" ""
-				(at 12.7 -893.65 0)
+			(property "Arrow Part Number" "MBR0520LT1G"
+				(at 11.43 -897.46 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -407,8 +407,8 @@
 					(hide yes)
 				)
 			)
-			(property "Arrow Price/Stock" ""
-				(at 12.7 -993.65 0)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/mbr0520lt1g/on-semiconductor?region=nac"
+				(at 11.43 -997.46 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -417,10 +417,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "CUHS20S30,H3F_1_1"
+			(symbol "MBR0520LT1G_1_1"
 				(polyline
 					(pts
-						(xy 5.08 0) (xy 7.62 0)
+						(xy 2.54 0) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.254)
@@ -432,7 +432,7 @@
 				)
 				(polyline
 					(pts
-						(xy 6.604 -1.524) (xy 6.604 -2.54)
+						(xy 5.08 2.54) (xy 5.08 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -444,7 +444,7 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -2.54) (xy 6.604 -2.54)
+						(xy 10.16 0) (xy 12.7 0)
 					)
 					(stroke
 						(width 0.254)
@@ -456,55 +456,7 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 2.54) (xy 7.62 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 2.54) (xy 8.636 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.636 1.524) (xy 8.636 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 0) (xy 15.24 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 12.7 2.54) (xy 12.7 -2.54) (xy 7.62 0)
+						(xy 5.08 0) (xy 10.16 2.54) (xy 10.16 -2.54) (xy 5.08 0)
 					)
 					(stroke
 						(width 0.254)
@@ -515,7 +467,7 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 0 0)
+					(at 0 0 0)
 					(length 2.54)
 					(name "K"
 						(effects
@@ -533,7 +485,7 @@
 					)
 				)
 				(pin passive line
-					(at 17.78 0 180)
+					(at 15.24 0 180)
 					(length 2.54)
 					(name "A"
 						(effects
@@ -552,29 +504,29 @@
 				)
 			)
 		)
-		(symbol "SamacSys_Parts:SLW-883935-2A-D"
+		(symbol "Samacsys:SS12D00G3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "S2"
-				(at 19.05 -1.2699 0)
+			(property "Reference" "S"
+				(at 19.05 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Value" "SLW-883935-2A-D"
-				(at 19.05 -3.8099 0)
+			(property "Value" "SS12D00G3"
+				(at 19.05 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Footprint" "SLW8839352AD"
+			(property "Footprint" "Samacsys:SS12D00G3"
 				(at 19.05 -94.92 0)
 				(effects
 					(font
@@ -584,7 +536,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.cuidevices.com/product/resource/pdf/slw-883935-2a-d.pdf"
+			(property "Datasheet" "http://vimex.com/switches/techdocs/SS12D00-tech.pdf"
 				(at 19.05 -194.92 0)
 				(effects
 					(font
@@ -594,7 +546,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Slide Switches 8.8 x 3.9 x 3.5 mm, 2 mm Raised Slide Actuator, Right-Angle, Through Hole"
+			(property "Description" "3 Pin Toggle Switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -603,7 +555,7 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "6.1"
+			(property "Height" "7"
 				(at 19.05 -394.92 0)
 				(effects
 					(font
@@ -613,7 +565,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Name" "CUI Devices"
+			(property "Manufacturer_Name" "Vimex"
 				(at 19.05 -494.92 0)
 				(effects
 					(font
@@ -623,7 +575,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "SLW-883935-2A-D"
+			(property "Manufacturer_Part_Number" "SS12D00G3"
 				(at 19.05 -594.92 0)
 				(effects
 					(font
@@ -633,7 +585,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "179-SLW-883935-2A-D"
+			(property "Mouser Part Number" ""
 				(at 19.05 -694.92 0)
 				(effects
 					(font
@@ -643,7 +595,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CUI-Devices/SLW-883935-2A-D?qs=1Kr7Jg1SGW%2Fv9j8ky6fn%2FQ%3D%3D"
+			(property "Mouser Price/Stock" ""
 				(at 19.05 -794.92 0)
 				(effects
 					(font
@@ -653,7 +605,7 @@
 					(hide yes)
 				)
 			)
-			(property "Arrow Part Number" "SLW-883935-2A-D"
+			(property "Arrow Part Number" ""
 				(at 19.05 -894.92 0)
 				(effects
 					(font
@@ -663,7 +615,7 @@
 					(hide yes)
 				)
 			)
-			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/slw-883935-2a-d/cui-devices?region=nac"
+			(property "Arrow Price/Stock" ""
 				(at 19.05 -994.92 0)
 				(effects
 					(font
@@ -673,7 +625,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SLW-883935-2A-D_1_1"
+			(symbol "SS12D00G3_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 17.78 -7.62)
@@ -1134,7 +1086,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:53047-0210")
+		(lib_id "Samacsys:53047-0210")
 		(at 64.77 118.11 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1142,7 +1094,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "055df60d-6ea5-4645-9ef1-a20e3e2454e2")
+		(uuid "02519d6e-1039-445e-aa8b-44184b28886f")
 		(property "Reference" "J1"
 			(at 54.61 107.95 0)
 			(effects
@@ -1151,7 +1103,7 @@
 				)
 			)
 		)
-		(property "Value" "Battery"
+		(property "Value" "53047-0210"
 			(at 54.61 110.49 0)
 			(effects
 				(font
@@ -1159,7 +1111,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:530470210"
+		(property "Footprint" "Samacsys:530470210"
 			(at 48.26 23.19 0)
 			(effects
 				(font
@@ -1169,7 +1121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.es/ProductDetail/Molex/53047-0210?qs=M5Ic86%252BuP8b8FQrTwriyOw%3D%3D"
+		(property "Datasheet" "https://componentsearchengine.com/Datasheets/2/53047-0210.pdf"
 			(at 48.26 -76.81 0)
 			(effects
 				(font
@@ -1258,11 +1210,11 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "9e225186-e517-45c2-a86d-eecde269021a")
-		)
 		(pin "2"
-			(uuid "6659acf3-ab32-4c01-a895-66312fb32047")
+			(uuid "fc09ff96-1beb-4ce7-8c9d-6181d4eae97a")
+		)
+		(pin "1"
+			(uuid "4a36a8ae-a7dd-435b-8e34-901ebc8c3c78")
 		)
 		(instances
 			(project "BatterySwitcher"
@@ -1274,15 +1226,15 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:CUHS20S30,H3F")
-		(at 102.87 57.15 0)
+		(lib_id "Samacsys:MBR0520LT1G")
+		(at 105.41 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "911cf85d-fd42-4bcb-bf64-cf2b0311805b")
+		(uuid "42d74467-dbc5-498b-b78a-836f4ba4d284")
 		(property "Reference" "D1"
 			(at 113.03 49.53 0)
 			(effects
@@ -1291,7 +1243,7 @@
 				)
 			)
 		)
-		(property "Value" "CUHS20S30,H3F"
+		(property "Value" "MBR0520LT1G"
 			(at 113.03 52.07 0)
 			(effects
 				(font
@@ -1299,8 +1251,8 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:CUHS20S40H3F"
-			(at 115.57 150.8 0)
+		(property "Footprint" "Samacsys:SOD3716X135N"
+			(at 116.84 154.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1309,8 +1261,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.es/ProductDetail/Toshiba/CUHS20S30H3F?qs=PqoDHHvF64%252BnIC9Qnnw9zg%3D%3D"
-			(at 115.57 250.8 0)
+		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/MBR0520LT1-D.PDF"
+			(at 116.84 254.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1319,8 +1271,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky Diodes & Rectifiers Sml-Signal Schottky 2A 30V 390pF"
-			(at 102.87 57.15 0)
+		(property "Description" "MBR0520LT1G, Schottky Diode,  0.5A max, 20V, 2-Pin, SOD-123"
+			(at 105.41 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1328,18 +1280,8 @@
 				(hide yes)
 			)
 		)
-		(property "Height" ""
-			(at 115.57 450.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Toshiba"
-			(at 115.57 550.8 0)
+		(property "Height" "1.35"
+			(at 116.84 454.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1348,8 +1290,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CUHS20S30,H3F"
-			(at 115.57 650.8 0)
+		(property "Manufacturer_Name" "onsemi"
+			(at 116.84 554.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1358,8 +1300,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "757-CUHS20S30H3F"
-			(at 115.57 750.8 0)
+		(property "Manufacturer_Part_Number" "MBR0520LT1G"
+			(at 116.84 654.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1368,8 +1310,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Toshiba/CUHS20S30H3F?qs=PqoDHHvF64%252BnIC9Qnnw9zg%3D%3D"
-			(at 115.57 850.8 0)
+		(property "Mouser Part Number" "863-MBR0520LT1G"
+			(at 116.84 754.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1378,8 +1320,8 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Part Number" ""
-			(at 115.57 950.8 0)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/MBR0520LT1G?qs=3JMERSakebqBWTiPUQp0nw%3D%3D"
+			(at 116.84 854.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1388,8 +1330,8 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Price/Stock" ""
-			(at 115.57 1050.8 0)
+		(property "Arrow Part Number" "MBR0520LT1G"
+			(at 116.84 954.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1398,11 +1340,21 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "9d27b391-2e68-493d-843e-0cf267383443")
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/mbr0520lt1g/on-semiconductor?region=nac"
+			(at 116.84 1054.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "1899d77c-435b-4ec5-a946-5b17e563187a")
+			(uuid "4f684118-70ae-446b-a5b2-25d6eb747637")
+		)
+		(pin "2"
+			(uuid "8908ec18-9c3c-4613-92f2-159127dfa99c")
 		)
 		(instances
 			(project "BatterySwitcher"
@@ -1414,7 +1366,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys_Parts:SLW-883935-2A-D")
+		(lib_id "Samacsys:SS12D00G3")
 		(at 130.81 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1422,7 +1374,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b7422f0f-1f10-41d4-8eb9-4bf31205e204")
+		(uuid "72b2a9f9-7706-4947-982b-158ebdbffe6f")
 		(property "Reference" "S1"
 			(at 149.86 66.0399 0)
 			(effects
@@ -1432,7 +1384,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SLW-883935-2A-D"
+		(property "Value" "SS12D00G3"
 			(at 149.86 68.5799 0)
 			(effects
 				(font
@@ -1441,7 +1393,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SLW8839352AD"
+		(property "Footprint" "Samacsys:SS12D00G3"
 			(at 149.86 159.69 0)
 			(effects
 				(font
@@ -1451,7 +1403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.cuidevices.com/product/resource/pdf/slw-883935-2a-d.pdf"
+		(property "Datasheet" "http://vimex.com/switches/techdocs/SS12D00-tech.pdf"
 			(at 149.86 259.69 0)
 			(effects
 				(font
@@ -1461,7 +1413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Slide Switches 8.8 x 3.9 x 3.5 mm, 2 mm Raised Slide Actuator, Right-Angle, Through Hole"
+		(property "Description" "3 Pin Toggle Switch"
 			(at 130.81 64.77 0)
 			(effects
 				(font
@@ -1470,7 +1422,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "6.1"
+		(property "Height" "7"
 			(at 149.86 459.69 0)
 			(effects
 				(font
@@ -1480,7 +1432,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "CUI Devices"
+		(property "Manufacturer_Name" "Vimex"
 			(at 149.86 559.69 0)
 			(effects
 				(font
@@ -1490,7 +1442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SLW-883935-2A-D"
+		(property "Manufacturer_Part_Number" "SS12D00G3"
 			(at 149.86 659.69 0)
 			(effects
 				(font
@@ -1500,7 +1452,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "179-SLW-883935-2A-D"
+		(property "Mouser Part Number" ""
 			(at 149.86 759.69 0)
 			(effects
 				(font
@@ -1510,7 +1462,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CUI-Devices/SLW-883935-2A-D?qs=1Kr7Jg1SGW%2Fv9j8ky6fn%2FQ%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 149.86 859.69 0)
 			(effects
 				(font
@@ -1520,7 +1472,7 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Part Number" "SLW-883935-2A-D"
+		(property "Arrow Part Number" ""
 			(at 149.86 959.69 0)
 			(effects
 				(font
@@ -1530,7 +1482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/slw-883935-2a-d/cui-devices?region=nac"
+		(property "Arrow Price/Stock" ""
 			(at 149.86 1059.69 0)
 			(effects
 				(font
@@ -1540,14 +1492,14 @@
 				(hide yes)
 			)
 		)
+		(pin "3"
+			(uuid "e6a2edb0-c051-4a8f-9e91-a9ae0cfaf280")
+		)
 		(pin "2"
-			(uuid "8173d387-713c-4556-a0c9-8cd513e58de8")
+			(uuid "8cbda115-721a-4ac2-863c-88939fa08fb1")
 		)
 		(pin "1"
-			(uuid "eaa19b8a-fb82-4fe9-bdc2-3bc3bc3b8b89")
-		)
-		(pin "3"
-			(uuid "78721adc-8e08-40e4-9f6d-2f3ac616dc06")
+			(uuid "1479226e-9dd1-4ce7-9daa-708743845ff0")
 		)
 		(instances
 			(project "BatterySwitcher"

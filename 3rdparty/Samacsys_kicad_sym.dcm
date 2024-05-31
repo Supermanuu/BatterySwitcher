@@ -1,0 +1,20 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MBR0520LT1G
+D MBR0520LT1G, Schottky Diode,  0.5A max, 20V, 2-Pin, SOD-123
+K
+F http://www.onsemi.com/pub/Collateral/MBR0520LT1-D.PDF
+$ENDCMP
+#
+$CMP SS12D00G3
+D 3 Pin Toggle Switch
+K
+F http://vimex.com/switches/techdocs/SS12D00-tech.pdf
+$ENDCMP
+#
+$CMP 53047-0210
+D Headers & Wire Housings VERTICAL HDR 2P
+K
+F https://componentsearchengine.com/Datasheets/2/53047-0210.pdf
+$ENDCMP
+#End Doc Library

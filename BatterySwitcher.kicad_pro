@@ -440,7 +440,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Samacsys"
+    ]
   },
   "meta": {
     "filename": "BatterySwitcher.kicad_pro",

@@ -17,7 +17,7 @@ jobs:
         uses: INTI-CMNB/KiBot@v1.7.0
 
       - name: Generate user guide and adsd it to the release
-        run: docker compose up doc && cp -r _doc/* release/
+        run: docker compose up doc && cp -r $(git rev-parse --show-toplevel)/_doc/* $(git rev-parse --show-toplevel)/release/
             
       - name: Upload manufacturing files
         uses: actions/upload-artifact@v4.3.3

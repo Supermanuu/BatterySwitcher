@@ -1377,19 +1377,20 @@
 		(descr "SOD-123")
 		(tags "Diode")
 		(property "Reference" "D1"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.SilkS")
 			(uuid "a3a471ec-3ec3-4a3b-8046-de8bd6877841")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
+					(size 1 1)
+					(thickness 0.2)
+					(bold yes)
 				)
 				(justify mirror)
 			)
 		)
 		(property "Value" "MBR0520LT1G"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "9d415886-1151-4b5f-b2d6-f6b1aa139c95")
@@ -1653,7 +1654,7 @@
 			(uuid "74e42022-1969-48a9-aac4-3e47e8c6ab14")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "B.Fab")
 			(uuid "87567f0d-c384-4a43-8d98-531c1f3935e6")
 			(effects

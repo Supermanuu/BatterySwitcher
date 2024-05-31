@@ -439,7 +439,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Samacsys"
+    ],
     "pinned_symbol_libs": [
       "Samacsys"
     ]

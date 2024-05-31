@@ -22,12 +22,13 @@ jobs:
       - name: Upload manufacturing files
         uses: actions/upload-artifact@v4.3.3
         with:
+          name: manufacturing
           if-no-files-found: error
-          path: "manufacturing.zip" 
+          path: "Gerbers" 
 
       - name: Upload release
         uses: actions/upload-artifact@v4.3.3
         with:
-          name: release.zip
+          name: release
           if-no-files-found: error
           path: "release/*"

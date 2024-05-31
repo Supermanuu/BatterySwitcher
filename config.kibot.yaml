@@ -122,6 +122,6 @@ outputs:
     dir: ./
     priority: 0
     options:
-      output: manufactirung.zip
+      output: manufacturing.zip
       files: 
         - source: "Gerbers/*"

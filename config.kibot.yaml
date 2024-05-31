@@ -109,12 +109,11 @@ outputs:
       metric_units: true
       pth_and_npth_single_file: false
     
-  - name: 'position'
+  - name: 'pick_and_place'
     comment: "Pick and place file, JLC style"
     type: position
     dir: Gerbers/
     options:
-      output: pick_and_place.csv
       format: CSV
   
   - name: 'zip_gerbers'

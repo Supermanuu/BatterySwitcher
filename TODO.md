@@ -4,4 +4,8 @@ dimension requirements:
 * 8 mm alto, max 12,5 mm?? a andres no le vendra bien
 * 19 mm ancho, max 19 mm
 * 15,5 mm entre pines
-do a non battery connector version? or try to merge both of them with or without soldering the connector
+
+modos de montaje: con conector de bateria o sin conector de bateria
+hacer guia de montaje
+
+poner los P/N bien

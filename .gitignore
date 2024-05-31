@@ -31,3 +31,6 @@ fp-info-cache
 # Added by me
 /#auto_saved_files#
 ~*.lck
+
+# Generated user guide
+_doc

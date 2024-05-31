@@ -1,0 +1,12 @@
+services:
+  doc:
+    image: markdown-to-html
+    build:
+      context: ./doc/
+      dockerfile_inline: |
+        FROM node:22-alpine3.19
+        RUN npm install -g markdown-folder-to-html
+    working_dir: /data
+    volumes:
+      - ./:/data/
+    command: markdown-folder-to-html /data/doc

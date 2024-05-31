@@ -38,54 +38,48 @@ global:
 #   kiauto_wait_start: 60
 #   kiauto_time_out_scale: 2
 
-outputs:
-  - name: 'bom'
-    comment: "Bill of Materials in CSV format"
-    type: bom
-    dir: .
-    options:
-      exclude_filter: 'exclude_any'
-      #group_fields: ['Part', 'Part Lib', 'Value', 'Footprint', 'Footprint Lib']
-  
-  - name: 'position'
-    comment: "Pick and place file, JLC style"
-    type: position
-    dir: .
-    options:
-      format: CSV
+############################################################
 
+outputs:
   - name: 'top'
     comment: "Image of PCB"
     type: pcbdraw
+    dir: release/
     options:
+      output: top.png
       bottom: false
       format: "png"
 
   - name: 'bottom'
     comment: "Image of PCB"
     type: pcbdraw
+    dir: release/
     options:
+      output: bottom.png
       bottom: true
       format: "png"
 
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
     type: pdf_sch_print
-    dir: .
+    dir: release/
     options:
       output: schematic.pdf
 
   - name: "interactive_bom"
     comment: "Interactive Bill of Materials (HTML)"
     type: ibom
-    dir: Interactive BoM
+    dir: release/
     options:
+      output: ibom.html
       blacklist: "DNF*"
+
+############################################################
 
   - name: 'gerbers'
     comment: "Gerbers for the board house"
     type: gerber
-    dir: Gerbers
+    dir: Gerbers/
     options:
       # generic layer options
       exclude_edge_layer: true
@@ -97,7 +91,6 @@ outputs:
       force_plot_invisible_refs_vals: false
       tent_vias: true
       check_zone_fills: true
-
       # gerber options
       line_width: 0.1
       subtract_mask_from_silk: false
@@ -106,16 +99,22 @@ outputs:
       create_gerber_job_file: true
       use_gerber_x2_attributes: true
       use_gerber_net_attributes: true
-
     layers: "all"
   
   - name: 'drill_files'
     comment: "Drill files for the board house"
     type: excellon
-    dir: Gerbers
+    dir: Gerbers/
     options:
       metric_units: true
       pth_and_npth_single_file: false
+    
+  - name: 'pick_and_place'
+    comment: "Pick and place file, JLC style"
+    type: position
+    dir: Gerbers/
+    options:
+      format: CSV
   
   - name: 'zip_gerbers'
     comment: "ZIPed gerbers"
@@ -123,5 +122,6 @@ outputs:
     dir: ./
     priority: 0
     options:
+      output: manufacturing.zip
       files: 
         - source: "Gerbers/*"

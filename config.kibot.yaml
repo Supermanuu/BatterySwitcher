@@ -125,3 +125,13 @@ outputs:
       output: manufacturing.zip
       files: 
         - source: "Gerbers/*"
+
+############################################################
+
+
+  - name: 'step'
+    comment: "3D model"
+    type: step
+    dir: ./
+    options:
+      output: 3d.step

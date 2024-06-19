@@ -38,3 +38,4 @@ jobs:
         with:
           name: 3D.step
           if-no-files-found: error
+          path: 3D.step

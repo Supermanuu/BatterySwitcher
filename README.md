@@ -9,7 +9,7 @@ Our goal is to have a PCB that could short and open the baterry supply via a swi
 
 ## Setup
 
-In order to use this repo you should add a `KICAD_3RD_PARTY` variable with `${KIPRJMOD}/3rdparty/` value.
+In order to use this repo you should add a `KICAD_3RD_PARTY` variable with `${KIPRJMOD}/3rdparty/` value. If you had installed Kicad for all users, the variable shall be a system variable. Otherwise it can be a user variable.
 
 ## Used plugins
 

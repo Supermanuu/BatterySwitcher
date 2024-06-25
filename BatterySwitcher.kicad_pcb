@@ -1812,7 +1812,6 @@
 		(uuid "2ad5bbb7-322f-4463-8520-e3b805a9120d")
 		(effects
 			(font
-				(face "Consolas")
 				(size 1.5 1.5)
 				(thickness 0.125)
 			)

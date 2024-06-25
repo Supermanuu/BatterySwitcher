@@ -18,6 +18,8 @@ jobs:
 
       - name: Generate gerbers, schema, images...
         uses: INTI-CMNB/KiBot@v1.7.0
+        env:
+          KICAD_3RD_PARTY: ${GITHUB_WORKSPACE}/3rdparty/
             
       - name: Upload manufacturing files
         uses: actions/upload-artifact@v4.3.3

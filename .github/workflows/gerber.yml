@@ -20,6 +20,9 @@ jobs:
         uses: INTI-CMNB/KiBot@v1.7.0
         env:
           KICAD_3RD_PARTY: ${GITHUB_WORKSPACE}/3rdparty/
+
+      - name: Inspect project files
+        run: ls -l . release Gerbers
             
       - name: Upload manufacturing files
         uses: actions/upload-artifact@v4.3.3

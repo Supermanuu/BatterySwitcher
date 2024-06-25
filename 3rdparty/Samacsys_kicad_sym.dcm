@@ -17,4 +17,10 @@ D Headers & Wire Housings VERTICAL HDR 2P
 K
 F https://componentsearchengine.com/Datasheets/2/53047-0210.pdf
 $ENDCMP
+#
+$CMP M22-2510146
+D Headers & Wire Housings 1 SIL VERT PIN HDR TIN
+K
+F https://cdn.harwin.com/pdfs/M22-251.pdf
+$ENDCMP
 #End Doc Library

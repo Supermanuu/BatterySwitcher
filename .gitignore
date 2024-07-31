@@ -34,3 +34,10 @@ fp-info-cache
 
 # Generated user guide
 _doc
+
+# Outputs
+/Gerbers/
+/release/
+3d.step
+manufacturing.zip
+BatterySwitcher-erc.txt

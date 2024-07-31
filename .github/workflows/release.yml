@@ -12,9 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: # Needed to get git version
+          fetch-depth: 0
+          fetch-tags: true
 
       - name: Generate user guide and adsd it to the release
         run: docker compose up doc && mv _doc release
+
+      - name: Set Git version
+        run: docker compose up version
 
       - name: Generate gerbers, schema, images...
         uses: INTI-CMNB/KiBot@v1.7.0

@@ -28,4 +28,4 @@ services:
     working_dir: /data
     volumes:
       - ./:/data/
-    command: bash -c 'GIT_VERSION_STRING=$(git describe --tags) && sed -i "s/vXX.XX.XX/$$GIT_VERSION_STRING/g" BatterySwitcher.kicad_pcb'
+    command: bash -c 'GIT_VERSION_STRING=$(git describe --tags --dirty) && sed -i "s/vXX.XX.XX/$$GIT_VERSION_STRING/g" BatterySwitcher.kicad_pcb'

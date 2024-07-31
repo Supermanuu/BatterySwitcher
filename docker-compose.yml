@@ -20,7 +20,11 @@ services:
       KICAD_3RD_PARTY: /data/3rdparty/
     command: kibot
   version:
-    image: cicirello/alpine-plus-plus:latest
+    image: git-and-bash
+    build: 
+      dockerfile_inline: |
+        FROM cicirello/alpine-plus-plus:latest
+        RUN git config --global --add safe.directory /data
     working_dir: /data
     volumes:
       - ./:/data/

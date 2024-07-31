@@ -841,13 +841,13 @@
 		(descr "M22-2510146")
 		(tags "Connector")
 		(property "Reference" "J2"
-			(at 0 0 0)
+			(at 2 0.5 0)
 			(layer "B.SilkS")
 			(uuid "1e978472-f356-4dfa-a589-955029400746")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
+					(size 0.7 0.7)
+					(thickness 0.125)
 				)
 				(justify mirror)
 			)
@@ -1168,13 +1168,13 @@
 		(descr "M22-2510146")
 		(tags "Connector")
 		(property "Reference" "J3"
-			(at 0 0 0)
+			(at -2 0.5 0)
 			(layer "B.SilkS")
 			(uuid "5aeafcc6-24b4-4c61-a93f-99baee5bcb27")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
+					(size 0.7 0.7)
+					(thickness 0.125)
 				)
 				(justify mirror)
 			)

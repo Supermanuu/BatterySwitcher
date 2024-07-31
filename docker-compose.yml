@@ -10,3 +10,12 @@ services:
     volumes:
       - ./:/data/
     command: markdown-folder-to-html /data/doc
+  kibot:
+    image: ghcr.io/inti-cmnb/kicad8_auto:1.6.5
+    working_dir: /data
+    volumes:
+      - ./:/data/
+    environment:
+      # NO_AT_BRIDGE: 1 # Think is not needed
+      KICAD_3RD_PARTY: /data/3rdparty/
+    command: kibot

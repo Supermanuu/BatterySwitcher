@@ -16,6 +16,9 @@ jobs:
       - name: Generate user guide and adsd it to the release
         run: docker compose up doc && mv _doc release
 
+      - name: Set Git version
+        run: docker compose up version
+
       - name: Generate gerbers, schema, images...
         uses: INTI-CMNB/KiBot@v1.7.0
         env:

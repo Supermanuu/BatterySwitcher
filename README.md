@@ -17,7 +17,7 @@ In order to use this repo you should add a `KICAD_3RD_PARTY` variable with `${KI
 
 ## Documentation
 
-See [the documentation](doc\documentation.md).
+See [the documentation](doc/user-guide.md).
 
 ## Releases
 

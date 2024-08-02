@@ -31,7 +31,7 @@ services:
     command: |
       bash -c '
         set -e -o pipefail 
-        VERSIONED_FILES="BatterySwitcher.kicad_pcb"
+        VERSIONED_FILES="BatterySwitcher.kicad_pcb BatterySwitcher.kicad_sch"
         if [[ "$(git rev-parse --abbrev-ref HEAD)" =~ release/* ]]; then
           GIT_VERSION_STRING=$(git rev-parse --abbrev-ref HEAD | sed "s+release/++g")
         else
@@ -42,5 +42,7 @@ services:
           echo "No version string found!"
           exit 1
         fi
-        sed -i "s/vXX.XX.XX-XXX-XXXXXXXX/$$GIT_VERSION_STRING/g" $$VERSIONED_FILES
+        for file in $$VERSIONED_FILES; do
+          sed -i "s/vXX.XX.XX-XXX-XXXXXXXX/$$GIT_VERSION_STRING/g" $$file
+        done
       '

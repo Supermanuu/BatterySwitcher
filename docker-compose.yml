@@ -32,7 +32,11 @@ services:
       bash -c '
         set -e -o pipefail 
         VERSIONED_FILES="BatterySwitcher.kicad_pcb"
-        GIT_VERSION_STRING=$(git describe --tags)
+        if [[ "$(git rev-parse --abbrev-ref HEAD)" =~ release/* ]]; then
+          GIT_VERSION_STRING=$(git rev-parse --abbrev-ref HEAD | sed "s+release/++g")
+        else
+          GIT_VERSION_STRING=$(git describe --tags)
+        fi
         echo Applying version "$$GIT_VERSION_STRING"
         if ! grep "vXX.XX.XX-XXX-XXXXXXXX" $$VERSIONED_FILES > /dev/null; then
           echo "No version string found!"

@@ -1,0 +1,35 @@
+name: tag-on-closed-release
+
+on:
+  pull_request:
+    branches: [ "main" ]
+    types: closed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      BRANCH_NAME: ${{ github.head_ref }} # Branch to merge into main
+    steps:
+      - uses: actions/checkout@v4
+        # with: # no shallow copy reversion?
+        #   fetch-depth: 0
+        #   fetch-tags: true
+
+      - name: Check release branch
+        run: |
+          if ! [[ "$BRANCH_NAME" =~ release/* ]]; then
+            echo "'$BRANCH_NAME' is not a release branch"
+            exit 1
+          fi
+
+      - name: Generate tag
+        run: git tag -u ${BRANCH_NAME#refs/heads/release/}
+
+
+      # esta mierda renta
+      - name: Bump version and push tag
+        uses: laputansoft/github-tag-action@v4.6
+        with:
+          github_token: ${{ env.github-token }}
+          tag: ${{ steps.package-version.outputs.version }}

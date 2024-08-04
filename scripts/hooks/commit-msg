@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Get the commit message
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat $COMMIT_MSG_FILE)
+
+# Define the required patterns
+PATTERN1="fix(pencil)"
+PATTERN2="feat(pencil)"
+PATTERN3="perf(pencil)"
+
+# Check if the commit message contains any of the required patterns
+if echo "$COMMIT_MSG" | grep -qE "$PATTERN1|$PATTERN2|$PATTERN3"; then
+  exit 0
+else
+  echo "Warning: Commit message does not contain 'fix(pencil)', 'feat(pencil)', or 'perf(pencil)'."
+  echo "Please ensure your commit message includes one of these patterns."
+  echo "See also https://github.com/marketplace/actions/github-actions-create-tag#bumping"
+
+  read "Do you want to continue committing? (y/N): " response
+
+  case $response in
+    Y|y) exit
+      ;;
+  esac
+
+  exit 1
+fi

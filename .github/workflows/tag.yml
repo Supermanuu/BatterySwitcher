@@ -1,35 +1,41 @@
-name: tag-on-closed-release
+name: Bump version
 
 on:
   pull_request:
-    branches: [ "main" ]
-    types: closed
+    branches:
+      - master
+    types:
+      - closed
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      BRANCH_NAME: ${{ github.head_ref }} # Branch to merge into main
+      BRANCH_NAME: ${{ github.head_ref || github.ref_name }} # Branch to merge into main
     steps:
+
       - uses: actions/checkout@v4
-        # with: # no shallow copy reversion?
-        #   fetch-depth: 0
-        #   fetch-tags: true
 
       - name: Check release branch
+        id: check
         run: |
           if ! [[ "$BRANCH_NAME" =~ release/* ]]; then
-            echo "'$BRANCH_NAME' is not a release branch"
-            exit 1
+            echo "'$BRANCH_NAME' is not a release branch, exiting job"
+            echo "donotrelease=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Generate tag
-        run: git tag -u ${BRANCH_NAME#refs/heads/release/}
-
-
-      # esta mierda renta
       - name: Bump version and push tag
-        uses: laputansoft/github-tag-action@v4.6
+        if : ( steps.check.outputs.donotrelease  != 'true' ) 
+        id: tag
+        uses: mathieudutour/github-tag-action@v6.2
         with:
-          github_token: ${{ env.github-token }}
-          tag: ${{ steps.package-version.outputs.version }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create a GitHub release
+        if : ( steps.check.outputs.donotrelease  != 'true' ) 
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.tag.outputs.new_tag }}
+          name: Release ${{ steps.tag.outputs.new_tag }}
+          body: ${{ steps.tag.outputs.changelog }}

@@ -53,8 +53,8 @@ To generate a release you will need to create a new `release/*` branch and make 
 
 In order to auto-generate the changelog, the commits shall use this rules:
 
-| Keyword        | Example                                                            | Increases |
-|----------------|--------------------------------------------------------------------|-----------|
-| `fix(pencil)`  | fix(pencil): stop graphite breaking when too much pressure applied | Patch     |
-| `feat(pencil)` | feat(pencil): add 'graphiteWidth' option                           | Minor     |
-| `perf(pencil)` | perf(pencil): remove graphiteWidth option                          | Major     |
+| Keyword           | Example                                                            | Increases |
+|-------------------|--------------------------------------------------------------------|-----------|
+| `fix(something)`  | fix(pencil): stop graphite breaking when too much pressure applied | Patch     |
+| `feat(something)` | feat(pencil): add 'graphiteWidth' option                           | Minor     |
+| `perf(something)` | perf(pencil): remove graphiteWidth option                          | Major     |

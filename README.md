@@ -2,7 +2,6 @@
 # Sofle Battery Switcher
 
 [![CI pipeline list](https://github.com/Supermanuu/BatterySwitcher/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/Supermanuu/BatterySwitcher/actions/workflows/release.yml)
-
 [![link to latest version](https://img.shields.io/badge/version-latest-blue)](https://github.com/Supermanuu/BatterySwitcher/releases/latest)
 
 We are triying yo make a battery switch for the Sofle Keyboard, or properly said, the [nRFMicro](https://github.com/joric/nrfmicro/tree/1.4) board used by the [Sofle](https://github.com/josefadamcik/SofleKeyboard) Keyboard.

@@ -44,7 +44,7 @@ jobs:
       - name: Setup release files
         run: |
           unzip 3d.step.zip
-          mv 3d.step 3d-${{ steps.tag.outputs.new_tag }}
+          mv 3d.step 3d-${{ steps.tag.outputs.new_tag }}.step
           mv manufacturing.zip manufacturing-${{ steps.tag.outputs.new_tag }}.zip
           mv release.zip release-${{ steps.tag.outputs.new_tag }}.zip
 
@@ -54,4 +54,4 @@ jobs:
           tag: ${{ steps.tag.outputs.new_tag }}
           name: Release ${{ steps.tag.outputs.new_tag }}
           body: ${{ steps.tag.outputs.changelog }}
-          artifacts: "3d-${{ steps.tag.outputs.new_tag }},manufacturing-${{ steps.tag.outputs.new_tag }}.zip,release-${{ steps.tag.outputs.new_tag }}.zip"
+          artifacts: "3d-${{ steps.tag.outputs.new_tag }}.step,manufacturing-${{ steps.tag.outputs.new_tag }}.zip,release-${{ steps.tag.outputs.new_tag }}.zip"

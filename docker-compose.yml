@@ -32,17 +32,18 @@ services:
       bash -c '
         set -e -o pipefail 
         VERSIONED_FILES="BatterySwitcher.kicad_pcb BatterySwitcher.kicad_sch"
-        if [[ "$(git rev-parse --abbrev-ref HEAD)" =~ release/* ]]; then
-          GIT_VERSION_STRING=$(git rev-parse --abbrev-ref HEAD | sed "s+release/++g")
-        else
-          GIT_VERSION_STRING=$(git describe --tags)
+        if [ -z "$GIT_VERSION_STRING" ]; then
+          echo GIT_VERSION_STRING env variable has not been setted
+          exit 1
         fi
         echo Applying version "$$GIT_VERSION_STRING"
-        if ! grep "vXX.XX.XX-XXX-XXXXXXXX" $$VERSIONED_FILES > /dev/null; then
+        if ! grep "vXX.XX.XXX" $$VERSIONED_FILES > /dev/null; then
           echo "No version string found!"
           exit 1
         fi
         for file in $$VERSIONED_FILES; do
-          sed -i "s/vXX.XX.XX-XXX-XXXXXXXX/$$GIT_VERSION_STRING/g" $$file
+          sed -i "s/vXX.XX.XXX/$$GIT_VERSION_STRING/g" $$file
         done
       '
+    environment:
+      GIT_VERSION_STRING: ${GIT_VERSION_STRING:-}

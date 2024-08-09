@@ -1939,7 +1939,7 @@
 		(layer "Edge.Cuts")
 		(uuid "9a64e326-5d6b-4b22-8367-a8eb7b1a7ad0")
 	)
-	(gr_text "${PROJECTNAME}\nvXX.XX.XX-XXX-XXXXXXXX"
+	(gr_text "${PROJECTNAME}\nvXX.XX.XXX"
 		(at 139.8 65.7 0)
 		(layer "F.SilkS")
 		(uuid "2ad5bbb7-322f-4463-8520-e3b805a9120d")

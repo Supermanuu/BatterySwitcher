@@ -5,7 +5,7 @@
 	(uuid "fff52d9c-2593-4d64-8717-f098392b56b0")
 	(paper "A4")
 	(title_block
-		(rev "vXX.XX.XX-XXX-XXXXXXXX")
+		(rev "vXX.XX.XXX")
 	)
 	(lib_symbols
 		(symbol "Samacsys:53047-0210"

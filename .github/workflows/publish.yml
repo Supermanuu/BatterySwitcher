@@ -4,15 +4,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+
+  generate-release-first:
+    uses: ./.github/workflows/release.yml
+
+  publish:
     runs-on: ubuntu-latest
+    needs: generate-release-first
     env:
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }} # Branch to merge into main
     steps:
 
       - uses: actions/checkout@v4
-
-      - uses: ./.github/workflows/release.yml
 
       - name: Bump version and push tag
         id: tag

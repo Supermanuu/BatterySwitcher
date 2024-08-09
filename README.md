@@ -45,4 +45,4 @@ Another attach has:
 
 ## Generate release
 
-To generate a release you will need to create a new `release/*` branch and make a PR from that branch to main. In that scenario, when the PR is closed a job will be launched. That job will generate a tag and a release with all the change information from the previous tag until now, using the commit contents as specified in <https://github.com/mathieudutour/github-tag-action>.
+To generate a release you will need to create a new `release/*` branch and make a PR from that branch to main. In that scenario, when the PR is closed a job will be launched. That job will generate a tag and a release with all the change information from the previous tag until now, using the commit contents as specified in <https://github.com/marketplace/actions/github-tag>.

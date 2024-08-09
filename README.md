@@ -11,6 +11,12 @@ Our goal is to have a PCB that could short and open the baterry supply via a swi
 
 In order to use this repo you should add a `KICAD_3RD_PARTY` variable with `${KIPRJMOD}/3rdparty/` value. If you had installed Kicad for all users, the variable shall be a system variable. Otherwise it can be a user variable.
 
+Also, to commit the messages we use <https://github.com/marketplace/actions/github-actions-create-tag>, so your commit messages need to follow a certain format. In order to do so, you need to install some git hooks. You can do that by running the following command:
+
+```bash
+./scripts/setup-hooks.sh
+```
+
 ## Used plugins
 
 * For download parts from [Component Search Engine](https://componentsearchengine.com/): [Import-LIB-KiCad-Plugin](https://github.com/Steffen-W/Import-LIB-KiCad-Plugin)
@@ -36,3 +42,7 @@ Another attach has:
 
 * Gerber files and drill files in `manufacturing.zip`
 * Pick and place file, JLC style in `pick_and_place.csv`
+
+## Generate release
+
+To generate a release you will need to create a new `release/*` branch and make a PR from that branch to main. In that scenario, when the PR is closed a job will be launched. That job will generate a tag and a release with all the change information from the previous tag until now, using the commit contents as specified in <https://github.com/mathieudutour/github-tag-action>.

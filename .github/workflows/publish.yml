@@ -10,7 +10,7 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
-    needs: generate-release-first
+    # needs: generate-release-first # Not needed for now because any push to main will trigger a build
     env:
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }} # Branch to merge into main
     steps:

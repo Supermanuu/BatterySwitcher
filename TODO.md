@@ -1,3 +1,3 @@
-# TODO
+# TO DO
 
-* add auto-release generation from PR
+* fix closed PR name

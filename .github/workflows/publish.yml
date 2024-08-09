@@ -12,6 +12,8 @@ jobs:
 
       - uses: actions/checkout@v4
 
+      - uses: ./.github/workflows/release.yml@main
+
       - name: Bump version and push tag
         id: tag
         uses: mathieudutour/github-tag-action@v6.2

@@ -46,3 +46,13 @@ Another attach has:
 ## Generate release
 
 To generate a release you will need to create a new `release/*` branch and make a PR from that branch to main. In that scenario, when the PR is closed a job will be launched. That job will generate a tag and a release with all the change information from the previous tag until now, using the commit contents as specified in <https://github.com/marketplace/actions/github-tag>.
+
+### Release changelog management
+
+In order to auto-generate the changelog, the commits shall use this rules:
+
+| Keyword        | Example                                                            | Increases |
+|----------------|--------------------------------------------------------------------|-----------|
+| `fix(pencil)`  | fix(pencil): stop graphite breaking when too much pressure applied | Patch     |
+| `feat(pencil)` | feat(pencil): add 'graphiteWidth' option                           | Minor     |
+| `perf(pencil)` | perf(pencil): remove graphiteWidth option                          | Major     |

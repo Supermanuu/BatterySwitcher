@@ -18,7 +18,7 @@ services:
     environment:
       # NO_AT_BRIDGE: 1 # Think is not needed
       KICAD_3RD_PARTY: /data/3rdparty/
-    command: kibot | sed 's/WARNING/warning: /g' | sed 's/ERROR/error: /g'
+    command: "kibot | sed 's/WARNING/warning: /g' | sed 's/ERROR/error: /g'"
   version:
     image: git-and-bash
     build: 

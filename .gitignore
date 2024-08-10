@@ -41,3 +41,7 @@ _doc
 3d.step
 manufacturing.zip
 BatterySwitcher-erc.txt
+BatterySwitcher-erc.html
+BatterySwitcher-drc.txt
+BatterySwitcher-drc.html
+kibot_*.kicad_dru

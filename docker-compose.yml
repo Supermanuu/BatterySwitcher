@@ -11,7 +11,7 @@ services:
       - ./:/data/
     command: markdown-folder-to-html /data/doc
   kibot:
-    image: ghcr.io/inti-cmnb/kicad8_auto:1.6.5
+    image: ghcr.io/inti-cmnb/kicad8_auto:latest # All versions: https://kibot.readthedocs.io/en/master/usage_with_ci_cd.html
     working_dir: /data
     volumes:
       - ./:/data/

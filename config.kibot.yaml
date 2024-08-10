@@ -1,4 +1,5 @@
-# Example KiPlot config file
+# Doc: https://kibot.readthedocs.io/en/master/introduction.html
+
 kiplot:
   version: 1
 
@@ -27,9 +28,12 @@ filters:
         regex: 'mount.*hole'
 
 preflight:
-  run_erc: true
+  erc:
+    enabled: true
+  drc:
+    all_track_errors: true
+    dont_stop: true
   update_xml: true
-  # run_drc: true
   check_zone_fills: false
   ignore_unconnected: false
 

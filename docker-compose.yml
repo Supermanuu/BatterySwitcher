@@ -18,7 +18,10 @@ services:
     environment:
       # NO_AT_BRIDGE: 1 # Think is not needed
       KICAD_3RD_PARTY: /data/3rdparty/
-    command: "kibot 2>&1 | sed 's/WARNING/warning: /g' | sed 's/ERROR/error: /g'"
+    command: |
+      bash -c "
+        kibot 2>&1 | sed 's/WARNING:/Warning: /g' | sed 's/ERROR:/Error: /g'
+      "
   version:
     image: git-and-bash
     build: 
@@ -32,7 +35,7 @@ services:
       bash -c '
         set -e -o pipefail 
         VERSIONED_FILES="BatterySwitcher.kicad_pcb BatterySwitcher.kicad_sch"
-        if [ -z "$GIT_VERSION_STRING" ]; then
+        if [ -z "$$GIT_VERSION_STRING" ]; then
           echo GIT_VERSION_STRING env variable has not been setted
           exit 1
         fi

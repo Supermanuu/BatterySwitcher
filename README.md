@@ -4,9 +4,9 @@
 [![CI pipeline list](https://github.com/Supermanuu/BatterySwitcher/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/Supermanuu/BatterySwitcher/actions/workflows/release.yml)
 [![link to latest version](https://img.shields.io/badge/version-latest-blue)](https://github.com/Supermanuu/BatterySwitcher/releases/latest)
 
-We are triying yo make a battery switch for the Sofle Keyboard, or properly said, the [nRFMicro](https://github.com/joric/nrfmicro/tree/1.4) board used by the [Sofle](https://github.com/josefadamcik/SofleKeyboard) Keyboard.
+We are triying to make a battery switch for the Sofle Keyboard, or properly said, the [nRFMicro](https://github.com/joric/nrfmicro/tree/1.4) board used by the [Sofle](https://github.com/josefadamcik/SofleKeyboard) Keyboard.
 
-Our goal is to have a PCB that could short and open the baterry supply via a switch, keeping as low profile as possible and doing it as integrated as possible
+Our goal is to have a PCB that could short and open the baterry supply via a switch, keeping as low profile as possible and doing it as integrated as possible. Also, the device should change the battery in any of the positions, because the `nRFMicro` has a battery charge monitor.
 
 ## Setup
 
@@ -32,9 +32,10 @@ See [Github releases](https://github.com/Supermanuu/BatterySwitcher/releases).
 
 Each release has:
 
-* iBOM in `ibom.html`
-* Schematic in `schematic.pdf`
-* User guide in `user-guide.html`
+* User guide in `user-guide.html`, with a lot of information to build the PCB.
+* iBOM in `ibom.html`, with all the PCB parts.
+* Another BOM in `out-of-bom.html`, with parts not used by the PCB, but needed in some cases.
+* Schematic in `schematic.pdf`, with the diagram of the PCB.
 * PCB images:
   * top view in `top.png`.
   * bottom view in `bottom.png`.
@@ -42,7 +43,7 @@ Each release has:
 Another attach has:
 
 * Gerber files and drill files in `manufacturing.zip`
-* Pick and place file, JLC style in `pick_and_place.csv`
+* 3D model in `3D.step`
 
 ## Generate release
 

@@ -32,9 +32,7 @@ jobs:
           GIT_VERSION_STRING: ${{ steps.tag.outputs.new_tag }}
 
       - name: Generate gerbers, schema, images...
-        uses: INTI-CMNB/KiBot@v1.7.0
-        env:
-          KICAD_3RD_PARTY: ${GITHUB_WORKSPACE}/3rdparty/
+        run: docker compose run --rm kibot
 
       - name: Inspect project files
         run: ls -l . release Gerbers

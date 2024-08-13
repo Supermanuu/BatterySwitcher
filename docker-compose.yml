@@ -11,14 +11,17 @@ services:
       - ./:/data/
     command: markdown-folder-to-html /data/doc
   kibot:
-    image: ghcr.io/inti-cmnb/kicad8_auto:1.6.5
+    image: ghcr.io/inti-cmnb/kicad8_auto:latest # All versions: https://kibot.readthedocs.io/en/master/usage_with_ci_cd.html
     working_dir: /data
     volumes:
       - ./:/data/
     environment:
       # NO_AT_BRIDGE: 1 # Think is not needed
       KICAD_3RD_PARTY: /data/3rdparty/
-    command: kibot
+    command: |
+      bash -c "
+        CLICOLOR_FORCE=1 kibot 2>&1 | sed 's/WARNING/::warning :/g' | sed 's/ERROR/::error :/g'
+      "
   version:
     image: git-and-bash
     build: 
@@ -32,7 +35,7 @@ services:
       bash -c '
         set -e -o pipefail 
         VERSIONED_FILES="BatterySwitcher.kicad_pcb BatterySwitcher.kicad_sch"
-        if [ -z "$GIT_VERSION_STRING" ]; then
+        if [ -z "$$GIT_VERSION_STRING" ]; then
           echo GIT_VERSION_STRING env variable has not been setted
           exit 1
         fi

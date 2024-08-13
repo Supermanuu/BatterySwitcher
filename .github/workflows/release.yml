@@ -33,8 +33,6 @@ jobs:
 
       - name: Generate gerbers, schema, images...
         run: docker compose run --rm kibot
-        env:
-          KICAD_3RD_PARTY: ${GITHUB_WORKSPACE}/3rdparty/
 
       - name: Inspect project files
         run: ls -l . release Gerbers

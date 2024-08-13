@@ -20,7 +20,7 @@ services:
       KICAD_3RD_PARTY: /data/3rdparty/
     command: |
       bash -c "
-        kibot 2>&1 | sed 's/WARNING:/Warning: /g' | sed 's/ERROR:/Error: /g'
+        CLICOLOR_FORCE=1 kibot 2>&1 | sed 's/WARNING/::warning :/g' | sed 's/ERROR/::error :/g'
       "
   version:
     image: git-and-bash

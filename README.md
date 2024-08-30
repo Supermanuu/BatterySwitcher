@@ -4,7 +4,7 @@
 [![CI pipeline list](https://github.com/Supermanuu/BatterySwitcher/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/Supermanuu/BatterySwitcher/actions/workflows/release.yml)
 [![link to latest version](https://img.shields.io/badge/version-latest-blue)](https://github.com/Supermanuu/BatterySwitcher/releases/latest)
 
-We are triying to make a battery switch for the Sofle Keyboard, or properly said, the [nRFMicro](https://github.com/joric/nrfmicro/tree/1.4) board used by the [Sofle](https://github.com/josefadamcik/SofleKeyboard) Keyboard.
+We are triying to make a battery switch for the Sofle Keyboard, or properly said, the [nRFMicro](https://github.com/joric/nrfmicro/tree/1.4) or Pro Micro compatible board used by the [Sofle](https://github.com/josefadamcik/SofleKeyboard) Keyboard.
 
 Our goal is to have a PCB that could short and open the baterry supply via a switch, keeping as low profile as possible and doing it as integrated as possible. Also, the device should change the battery in any of the positions, because the `nRFMicro` has a battery charge monitor.
 

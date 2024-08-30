@@ -11,11 +11,7 @@ In  this files you will have a lot of information for building this project:
 * [iBOM](ibom.html)
 * [Schematic (only works from artifact documentation)](schematic.pdf)
 
-Buy all the components in the [iBOM](ibom.html) and the ones gathered in [Out of BOM](out-of-bom.md) from whatever supplier you like and then, start building:
-
-1. [PCB](mounting/pcb.md)
-2. [Battery connector (optional)](mounting/battery-connector.md)
-3. [Bendig](mounting/bending.md)
+Buy all the components in the [iBOM](ibom.html) and the ones gathered in [Out of BOM](out-of-bom.md) from whatever supplier you like and then, start [building](mounting/pcb.md).
 
 ---
 
